@@ -69,6 +69,13 @@ The grass grows at a fixed rate and can be eaten by the sheeps only when fully g
 ### Exercise
 Tune the parameters and implement the behaviour of the sheeps and wolves in a simulation to reach a stable ecosystem.
 
+### Useful methods
+- `self.move_randomly()`: Moves the agent in a random direction
+- `self.die()`: Kills the agent
+- `environment.eat_grass((x,y))`: Eats the grass at the given position
+- `environment.get_prey((x,y))`: Returns the prey at the given position
+- `environment.eat_prey((x,y))`: Eats the prey at the given position
+
 ### Already implemented
 - Grass growth: Each grass grows at a fixed rate
 - Death of sheeps and wolves: When they run out of lives, they die

@@ -40,6 +40,12 @@ class Sheep(Animal):
     def __init__(self, mas, on_grid_position):
         super().__init__(mas, on_grid_position, "white")
 
+    def on_perceive(self):
+        # Exercise: Implement the Sheep perception
+        pass
+    def on_decide(self):
+        # Exercise: Implement the Sheep decision
+        pass
     def on_act(self):
         # Exercise: Implement the Sheep behavior
         pass
@@ -55,6 +61,12 @@ class Wolf(Animal):
     def __init__(self, mas, on_grid_position):
         super().__init__(mas, on_grid_position, "red")
 
+    def on_perceive(self):
+        # Exercise: Implement the Wolf perception
+        pass
+    def on_decide(self):
+        # Exercise: Implement the Wolf decision
+        pass
     def on_act(self):
         # Exercise: Implement the Wolf behavior
         pass
