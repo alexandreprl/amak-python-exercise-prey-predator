@@ -33,6 +33,9 @@ class PreyPredatorEnvironment:
     def eat_grass(self, on_grid_position):
         self.grass[on_grid_position[1]][on_grid_position[0]].eat()
 
+    def get_grass(self, on_grid_position):
+        return self.grass[on_grid_position[1]][on_grid_position[0]]
+
     def get_sheep(self, on_grid_position):
         res = self.grid[on_grid_position[1]][on_grid_position[0]]
         # find object of type Prey in res array
@@ -41,8 +44,7 @@ class PreyPredatorEnvironment:
                 return res[y]
         return None
 
-    def eat_sheep(self, prey):
-        on_grid_position = prey.on_grid_position
+    def eat_sheep(self, on_grid_position):
         res = self.grid[on_grid_position[1]][on_grid_position[0]]
         for x in range(len(res)):
             if isinstance(res[x], Sheep):
