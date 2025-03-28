@@ -31,7 +31,7 @@ class PreyPredatorEnvironment:
                     self.grass[y][x].grow()
 
     def eat_grass(self, on_grid_position):
-        self.grass[on_grid_position[1]][on_grid_position[0]].eat()
+        return self.grass[on_grid_position[1]][on_grid_position[0]].eat()
 
     def get_grass(self, on_grid_position):
         return self.grass[on_grid_position[1]][on_grid_position[0]]

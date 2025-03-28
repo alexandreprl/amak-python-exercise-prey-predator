@@ -81,7 +81,8 @@ class GrassEntity(EnvironmentEntity):
 
     def eat(self):
         ate = self.value >= 100
-        self.value = 0
+        if ate:
+            self.value = 0
         self.set_color((0, 255 * self.value / 100, 0))
         return ate
 
