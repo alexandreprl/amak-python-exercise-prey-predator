@@ -52,8 +52,8 @@ class Sheep(Animal):
 
 
 # The Wolf can eat Sheep and reproduce
-# self.amas.environment.get_prey(self.on_grid_position) returns the Sheep in the same position as the Wolf
-# self.amas.environment.eat_prey(prey) kills the Sheep
+# self.amas.environment.get_sheep(self.on_grid_position) returns the Sheep at the same position as the Wolf
+# self.amas.environment.eat_sheep(self.on_grid_position) kills the Sheep at the same position as the Wolf
 # Wolf(self.amas, self.on_grid_position) creates a new Wolf in the same position
 # self.move_randomly() moves the Wolf in a random direction
 # self.die() kills the Wolf

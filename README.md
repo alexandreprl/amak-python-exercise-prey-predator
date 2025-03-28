@@ -73,8 +73,8 @@ Tune the parameters and implement the behaviour of the sheeps and wolves in a si
 - `self.move_randomly()`: Moves the agent in a random direction
 - `self.die()`: Kills the agent
 - `environment.eat_grass((x,y))`: Eats the grass at the given position
-- `environment.get_prey((x,y))`: Returns the prey at the given position
-- `environment.eat_prey((x,y))`: Eats the prey at the given position
+- `environment.get_sheep((x,y))`: Returns a sheep present at the given position
+- `environment.eat_prey((x,y))`: Eats a sheep present at the given position
 
 ### Already implemented
 - Grass growth: Each grass grows at a fixed rate
